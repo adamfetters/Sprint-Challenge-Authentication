@@ -2,12 +2,14 @@ const jwt = require('jsonwebtoken');
 const { mysecret } = require('../../config');
 
 const login = (req, res) => {
+  console.log(req);
   if (!req.username) {
     return res.status(403).json({
       error: 'no username check your comparePW middleware'
     });
   }
   const payload = {
+    
     username: req.username
   }; // what will determine our payload.
   const token = jwt.sign(payload, mysecret); // creates our JWT with a secret and a payload and a hash.
