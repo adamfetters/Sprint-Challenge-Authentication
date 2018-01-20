@@ -5,10 +5,10 @@ import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Jokes from './components/Jokes/Joke';
 import { Provider } from 'react-redux';
-import { createStore , applyMiddlewre } from 'redux';
+import { createStore , applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import { 
-  BrowserRoute as Router,
+  BrowserRouter as Router,
   Route
   } from 'react-router-dom';
   import reducers from './reducers';

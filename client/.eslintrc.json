@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-multi-spaces": "error",
+    "semi": "error",
+    "linebreak-style": ["error", "windows"],
+    "no-trailing-spaces": "error",
+    "arrow-parens": "off",
+    "react/jsx-filedname-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}
